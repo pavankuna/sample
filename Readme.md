@@ -27,7 +27,8 @@
 
 # INPUTS
     ASR and ILOM supernet file:
-        List of supernet that ILOM belongs in a row and corresponding ASR that can be mapped in next row. File can be in .csv/.txt format
+        List of supernet that ILOM belongs in a row and corresponding ASR that can be mapped in next row. File can be in
+         .csv/.txt format
 
     ILOM host file:
         List of ILOMS configured host names
@@ -35,7 +36,8 @@
     Wallet:
         To enhance the security measures encrypted passwords are used rather than a plain text passwords.
 
-        Two wallet files are required , one for storing ASR, Database, Grafana passwords and other for ILOM host passwords.
+        Two wallet files are required , one for storing ASR, Database, Grafana passwords and other for ILOM host
+        passwords.
 
 # OUTPUTS
     Following parameters are extracted and shown as resultant:
@@ -59,10 +61,26 @@
     No of hosts got activation Pending
 # Tools
     Grafana: A graphical graph representation for number of hosts in success, failure, pending states.
+
     Database: All parameters mentioned in OUTPUTS section above are each columns in database.
-              Additionaly JOBS is a table to represent the name of the user as well the machine name and a capture of the execution start time and end time is done.
+              Additionaly JOBS is a table to represent the name of the user as well the machine name and a capture of
+              the execution start time and end time is done.
 
 # Metrics
+    Considering 75 ILOMS hostnames 98% are activated in the ASR successfully. Observation remains constant for
+    10 attempts
+
+    Time required to activate 43 ILOMs : 212 seconds
+
+    Time may increase due to followind limitations:
+
+                            * Connection Timeout
+                            * Socket Port Error
+    Multi threading: Activation processes is done with ILOMS hosts in parallel.
+
+
+
+
 
 
 
