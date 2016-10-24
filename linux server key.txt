@@ -1,0 +1,10 @@
+key name :id_rsa
+1a:8d:85:d8:44:9b:ee:34:86:32:66:4b:b4:a5:46:51 
+
+password DIVYA33pavan
+
+ip address:
+192.168.56.101
+
+dominique_bouche
+
